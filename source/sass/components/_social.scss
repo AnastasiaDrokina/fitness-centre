@@ -1,0 +1,24 @@
+.social__item {
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+}
+
+/* tablet */
+@media (max-width: $tablet) {
+  .social__item {
+    margin-right: 20px;
+  }
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .social__item {
+    margin-right: 35px;
+  }
+}
