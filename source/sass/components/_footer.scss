@@ -1,6 +1,7 @@
 // footer__top
 .footer__top {
   display: flex;
+  border-top: 1px solid $grey;
 }
 // form
 .footer__form {
@@ -44,6 +45,9 @@
 
 /* tablet */
 @media (max-width: $tablet) {
+  .footer__top {
+    border-top: none;
+  }
   .footer__bottom {
     padding-top: 47px;
     padding-bottom: 47px;
