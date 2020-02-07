@@ -1,0 +1,19 @@
+.logo {
+  display: inline-block;
+}
+
+/* tablet */
+@media (max-width: $tablet) {
+  .logo {
+    width: 82px;
+    height: 17px;
+  }
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .logo {
+    width: 68px;
+    height: 15px;
+  }
+}

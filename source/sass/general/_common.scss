@@ -33,6 +33,11 @@ h2 {
   color: $blue-dark;
 }
 
+p {
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
 /* tablet */
 @media (max-width: $tablet) {
   h2 {
