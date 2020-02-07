@@ -1,0 +1,40 @@
+.header {
+  background-color: red;
+  padding-top: 30px;
+}
+
+.header__wrapper {
+ display: flex;
+ justify-content: space-between;
+}
+
+.header__phone {
+  color: $white;
+  font-family: $font-bebas;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 3%;
+}
+
+/* tablet */
+@media (max-width: $tablet) {
+  .header {
+    padding-top: 40px;
+  }
+
+  .header__phone {
+    font-size: 24px;
+    letter-spacing: 2%;
+  }
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .header {
+    padding-top: 20px;
+  }
+
+  .header__phone {
+    font-size: 20px;
+  }
+}
