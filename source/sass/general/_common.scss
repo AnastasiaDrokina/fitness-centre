@@ -29,10 +29,16 @@ img {
 h2 {
   font-family: $font-bebas;
   font-weight: bold;
-  font-size: 42px;
+  font-size: 49px;
   color: $blue-dark;
 }
 
+/* tablet */
+@media (max-width: $tablet) {
+  h2 {
+    font-size: 42px;
+  }
+}
 
 /* mobile */
 @media (max-width: $mobile) {
