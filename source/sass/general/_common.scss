@@ -36,9 +36,13 @@ h2 {
   color: $blue-dark;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 26px;
+}
+
 p {
   margin-bottom: 20px;
-  font-weight: lighter;
 }
 
 /* tablet */
@@ -59,6 +63,10 @@ p {
   }
 
   h2 {
-    font-size: 78px;
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
   }
 }

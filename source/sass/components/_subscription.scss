@@ -1,0 +1,165 @@
+.subscription {
+  background-color: $white-2;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.subscription h2,
+.subscription h3,
+.subscription p {
+  text-align: center;
+  margin: 0;
+}
+
+.subscription h2 {
+  margin-bottom: 53px;
+}
+
+.subscription__time {
+  margin-bottom: 39px;
+}
+
+.subscription__time-list,
+.subscription__item {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subscription__time-list,
+.subscription__list {
+  @include list-reset;
+}
+
+.subscription__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription__time-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 341px;
+  border-bottom: 2px solid rgba($grey-2, 0.2);
+}
+
+.subscription__btn {
+  @include button-reset;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgba($blue-dark, 0.5);
+  cursor: pointer;
+}
+
+.subscription__btn--active {
+  border-bottom: 2px solid $red-2;
+  color: $blue-dark;
+}
+
+.subscription__item {
+  width: 360px;
+  padding: 7px;
+  background-color: $white;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    background-color: rgb(209, 10, 66);
+    background: linear-gradient(135deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 80%);
+  }
+}
+
+.subscription__link {
+  display: inline-block;
+}
+
+.subscription h3 {
+  margin-bottom: 22px;
+}
+
+.subscription p {
+  margin-bottom: 59px;
+}
+
+.subscription__price {
+  font-weight: bold;
+  font-size: 60px;
+  color: $blue-bright;
+}
+
+.subscription__price span {
+  color: $blue-dark;
+}
+
+.subscription__wrapper {
+  background-color: $white;
+  min-height: 434px;
+  padding-top: 61px;
+}
+
+/* tablet */
+@media (max-width: $tablet) {
+  .subscription {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .subscription h2,
+  .subscription__time {
+    margin-bottom: 45px;
+  }
+
+  .subscription__list {
+    flex-direction: column;
+  }
+
+  .subscription__btn {
+    font-size: 18px;
+  }
+
+  .subscription__item {
+    width: 442px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .subscription {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .subscription h2,
+  .subscription__time {
+    margin-bottom: 35px;
+  }
+
+  .subscription__btn {
+    font-size: 16px;
+  }
+
+  .subscription__item {
+    max-width: 290px;
+    margin-bottom: 35px;
+  }
+
+  .subscription h3 {
+    margin-bottom: 20px;
+  }
+
+  .subscription p {
+    margin-bottom: 50px;
+  }
+
+  .subscription__price {
+    font-size: 48px;
+  }
+}

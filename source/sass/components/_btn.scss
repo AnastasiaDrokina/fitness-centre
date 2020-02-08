@@ -12,7 +12,7 @@
 .btn__form-sub {
   width: 100%;
   min-height: 52px;
-  padding: 20px 165px;
+  padding: 20px;
   color: $white;
   font-size: 14px;
 
@@ -24,15 +24,38 @@
 
 //Btn "buy" in the banner
 .btn__banner {
+  display: block;
   max-width: 230px;
   min-height: 57px;
-  padding: 24px 56px;
+  padding: 24px;
   color: $white;
   font-size: 12px;
+  text-align: center;
 
   &:hover,
   &:focus {
-    background-color: darken($red-2, 20%);
+    background-color: $white;
+    color: $blue-dark;
+  }
+}
+
+//Btn "buy" in the subscription
+.btn__subscription {
+  display: block;
+  max-width: 206px;
+  min-height: 64px;
+  padding: 27px 45px;
+  margin-right: auto;
+  margin-left: auto;
+  border-width: 2px;
+  border-color: $blue-dark;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(237, 2, 51);
+    background: linear-gradient(135deg, rgba(237, 2, 51, 1) 0%, rgba(0, 62, 183, 1) 80%);
+    color: $white;
+    border: none;
   }
 }
 
