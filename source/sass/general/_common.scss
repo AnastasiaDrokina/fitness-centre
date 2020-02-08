@@ -12,7 +12,6 @@ body {
   font-family: $font-roboto;
   font-size: 16px;
   font-weight: normal;
-  line-height: 150%;
   color: $blue-dark;
 }
 
@@ -26,9 +25,13 @@ img {
   vertical-align: middle;
 }
 
+h1 {
+  font-family: $font-bebas;
+  font-size: 109px;
+}
+
 h2 {
   font-family: $font-bebas;
-  font-weight: bold;
   font-size: 49px;
   color: $blue-dark;
 }
@@ -40,6 +43,10 @@ p {
 
 /* tablet */
 @media (max-width: $tablet) {
+  h1 {
+    font-size: 86px;
+  }
+
   h2 {
     font-size: 42px;
   }
@@ -47,7 +54,11 @@ p {
 
 /* mobile */
 @media (max-width: $mobile) {
+  h1 {
+    font-size: 86px;
+  }
+
   h2 {
-    font-size: 32px;
+    font-size: 78px;
   }
 }

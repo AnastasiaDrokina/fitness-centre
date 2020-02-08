@@ -22,6 +22,31 @@
   }
 }
 
+//Btn "buy" in the banner
+.btn__banner {
+  max-width: 230px;
+  min-height: 57px;
+  padding: 24px 56px;
+  color: $white;
+  font-size: 12px;
+
+  &:hover,
+  &:focus {
+    background-color: darken($red-2, 20%);
+  }
+}
+
 /* tablet */
 @media (max-width: $tablet) {
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .btn__banner {
+    max-width: none;
+    width: 100%;
+    min-height: 59px;
+    padding: 25px 87px;
+    margin-bottom: 80px;
+  }
 }

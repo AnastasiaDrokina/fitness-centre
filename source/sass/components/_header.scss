@@ -1,5 +1,4 @@
 .header {
-  background-color: red;
   padding-top: 30px;
 }
 
@@ -13,6 +12,11 @@
   font-family: $font-bebas;
   font-size: 26px;
   font-weight: bold;
+
+  &:hover,
+  &:focus {
+    color: $blue-dark;;
+  }
 }
 
 /* tablet */

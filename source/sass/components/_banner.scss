@@ -1,0 +1,71 @@
+.banner h1 {
+  margin: 0;
+  color: $white;
+}
+
+.banner__city {
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 122px;
+  font-family: $font-bebas;
+  font-weight: normal;
+  font-size: 49px;
+  color: $white;
+}
+
+.banner__info {
+  font-size: 14px;
+  color: $white;
+}
+
+.banner__info p {
+  margin: 0;
+}
+
+.banner__social {
+  @include list-reset;
+}
+
+.banner__item {
+  margin-bottom: 24px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.banner__link {
+  display: inline-block;
+  font-size: 12px;
+  color: $white;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $blue-dark;
+  }
+}
+
+/* tablet */
+@media (max-width: $tablet) {
+  .banner__city {
+    margin-bottom: 16px;
+    margin-top: 81px;
+    font-size: 34px;
+  }
+  .banner__link {
+    display: none;
+  }
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .banner__city {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-size: 28px;
+  }
+
+  .banner__img {
+    display: none;
+  }
+}
