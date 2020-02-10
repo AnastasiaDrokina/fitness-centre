@@ -59,8 +59,33 @@
   }
 }
 
+//Btn "promo"
+.btn__promo {
+  display: block;
+  width: 100%;
+  min-height: 67px;
+  padding: 29px;
+  margin-top: 55px;
+  border-width: 4px;
+  text-align: center;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue-dark;
+  }
+}
+
 /* tablet */
 @media (max-width: $tablet) {
+  .btn__promo {
+    min-height: 39px;
+    padding: 16px;
+    margin-top: 36px;
+    border-width: 2px;
+    font-size: 12px;
+  }
 }
 
 /* mobile */
