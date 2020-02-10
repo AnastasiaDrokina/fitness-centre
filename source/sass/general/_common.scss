@@ -45,6 +45,10 @@ p {
   margin-bottom: 20px;
 }
 
+figure {
+  margin: 0;
+}
+
 /* tablet */
 @media (max-width: $tablet) {
   h1 {
