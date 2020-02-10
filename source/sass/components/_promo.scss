@@ -1,3 +1,7 @@
+.promo {
+ padding-bottom: 120px;
+}
+
 .promo__wrapper {
   display: flex;
 }
@@ -40,6 +44,10 @@
 
 /* tablet */
 @media (max-width: $tablet) {
+  .promo {
+    padding-bottom: 100px;
+   }
+
   .promo h2 {
     margin: 0 29px 15px 0;
     font-size: 52px;
@@ -64,6 +72,10 @@
 
 /* mobile */
 @media (max-width: $mobile) {
+  .promo {
+    padding-bottom: 70px;
+   }
+
   .promo__wrapper {
     display: flex;
     flex-direction: column;
