@@ -3,17 +3,17 @@
 }
 
 .form h2 {
-  color: $white;
   margin: 0 0 58px 0;
+  color: $white;
 }
 
 input {
   width: calc(50% - 15px);
   padding-bottom: 10px;
   margin-bottom: 30px;
-  background-color: transparent;
   font-size: 14px;
   color: $white;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid $grey;
 

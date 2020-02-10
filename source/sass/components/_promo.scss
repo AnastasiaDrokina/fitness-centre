@@ -1,5 +1,5 @@
 .promo {
- padding-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .promo__wrapper {
@@ -7,10 +7,10 @@
 }
 
 .promo__info-wrapper {
-  background-color: $red;
   width: 500px;
   min-height: 500px;
   padding: 87px 78px;
+  background-color: $red;
 }
 
 .promo__column {
@@ -46,7 +46,7 @@
 @media (max-width: $tablet) {
   .promo {
     padding-bottom: 100px;
-   }
+  }
 
   .promo h2 {
     margin: 0 29px 15px 0;
@@ -74,7 +74,7 @@
 @media (max-width: $mobile) {
   .promo {
     padding-bottom: 70px;
-   }
+  }
 
   .promo__wrapper {
     display: flex;

@@ -1,12 +1,12 @@
 @mixin list-reset() {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 @mixin button-reset() {
   padding: 0;
-  border: none;
   font: inherit;
   color: inherit;
+  border: none;
 }

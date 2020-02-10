@@ -7,8 +7,8 @@
 }
 
 .contacts__dt {
-  font-weight: bold;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .contacts__dd {
@@ -24,8 +24,8 @@
   }
 
   .contacts__dt {
-    font-size: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
   }
 
   .contacts__dd {
@@ -34,6 +34,3 @@
     line-height: 152%;
   }
 }
-
-/* mobile */
-@media (max-width: $mobile) {}

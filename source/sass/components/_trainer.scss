@@ -6,11 +6,11 @@
   position: absolute;
   bottom: 30px;
   left: 50%;
-  transform: translate(-50%);
   margin: 0;
   text-align: center;
   font-size: 18px;
   color: $white;
+  transform: translate(-50%);
 }
 
 .trainer__list {
@@ -42,10 +42,10 @@
   left: 0;
   right: 0;
   display: none;
-  background-color: rgba($blue-dark, 0.9);
+  padding: 58px 57px;
   color: $white;
   text-align: center;
-  padding: 58px 57px;
+  background-color: rgba($blue-dark, 0.9);
 }
 
 .trainer__overlay p {
@@ -62,8 +62,8 @@
 
 .trainer__overlay-list {
   @include list-reset;
-  font-size: 14px;
   margin-top: 45px;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -81,12 +81,12 @@
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
     display: block;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: $white;
+    transform: translateY(-50%);
   }
 }
 

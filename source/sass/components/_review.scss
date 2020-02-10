@@ -10,10 +10,10 @@
 
 .review {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
   max-width: 560px;
   padding: 62px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: $blue-2;
 }
 
@@ -32,9 +32,9 @@
 }
 
 .review__name {
+  margin-bottom: 25px;
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 25px;
 }
 
 .review p {
@@ -52,9 +52,9 @@
   }
 
   .review {
+    max-width: 566px;
     padding-left: 65px;
     padding-right: 65px;
-    max-width: 566px;
   }
 }
 
@@ -65,8 +65,8 @@
   }
 
   .review {
-    padding: 40px 25px;
     max-width: 226px;
+    padding: 40px 25px;
   }
 
   .review__img {
