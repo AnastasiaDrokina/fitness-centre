@@ -47,15 +47,22 @@
 
 .subscription__btn {
   @include button-reset;
+  padding-bottom: 20px;
+  margin-bottom: -2px;
   background-color: transparent;
   font-size: 20px;
   color: rgba($blue-dark, 0.5);
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .subscription__btn--active {
-  border-bottom: 2px solid $red-2;
+  border-bottom-color: $red-2;
   color: $blue-dark;
+}
+
+.subscription__period {
+  color: $blue-4;
 }
 
 .subscription__item {
@@ -84,14 +91,27 @@
   margin-bottom: 59px;
 }
 
+.subscription__unit {
+  color: $blue-dark;
+}
+
 .subscription__price {
+  position: relative;
+  z-index: 1;
   font-weight: bold;
   font-size: 60px;
   color: $blue-bright;
 }
 
-.subscription__price span {
-  color: $blue-dark;
+.subscription__price-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+  font-weight: bold;
+  font-size: 100px;
+  color: rgba($grey-3, 0.48);
+  transform: translateX(-50%);
 }
 
 .subscription__wrapper {

@@ -1,15 +1,8 @@
+/* eslint-disable new-cap, no-undef */
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var btnBanner = document.querySelector('.btn__banner');
+var subscription = document.querySelector('.subscription');
 
-pageHeader.classList.remove('page-header--nojs');
-
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
+btnBanner.addEventListener('click', function () {
+  window.scrollBy({top: subscription.offsetTop - window.scrollY, behavior: 'smooth'});
 });
