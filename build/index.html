@@ -23,14 +23,16 @@
       </div>
     </header>
     <div class="banner  container">
-      <span class="banner__city">Омск</span>
-      <h1>Фитнес<br>центр</h1>
-      <div class="banner__info">
-        <p>Тренажёрный зал</p>
-        <p>Групповые занятия</p>
-        <p>Кардио-зона</p>
+      <div class="banner__wrapper">
+        <p class="banner__city">Омск</p>
+        <h1>Фитнес<br>центр</h1>
+        <div class="banner__info">
+          <p>Тренажёрный зал</p>
+          <p>Групповые занятия</p>
+          <p>Кардио-зона</p>
+        </div>
+        <a class="btn  btn__banner" href="#">Купить абонемент</a>
       </div>
-      <a class="btn  btn__banner" href="#">Купить абонемент</a>
       <figure class="banner__img">
         <img src="img/banner.jpg" width="500" height="556" alt="Изображение мужчины">
       </figure>
@@ -41,23 +43,27 @@
       </ul>
     </div>
   </div>
-  <div class="info">
-    <div class="container">
-      <div class="info__wrapper">
+
+  <section class="info">
+    <div class="container info__wrapper">
+      <div class="info__description">
         <h2>Тренажерный зал</h2>
         <p class="info__lead">Просторный зал площадью 900 кв/м</p>
         <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
         <p class="info__hidden">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий. </p>
       </div>
-      <figure class="info__photo">
-        <img src="img/hall-1.jpg" width="660" height="401" alt="Фото спортивного зала">
-      </figure>
-      <a class="info__video" href="#">
-        <img src="img/hall-2.jpg" width="364" height="228" alt="Видео спортивного зала">
-      </a>
+      <div class="info__photo-wrapper">
+        <figure class="info__photo">
+          <img src="img/hall-1.jpg" width="660" height="401" alt="Фото спортивного зала">
+        </figure>
+        <a class="info__video" href="#">
+          <img src="img/hall-2.jpg" width="364" height="228" alt="Видео спортивного зала">
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="subscription">
+  </section>
+
+  <section class="subscription">
     <div class="container ">
       <h2>Абонементы</h2>
       <div class="subscription__time">
@@ -102,33 +108,40 @@
         </ul>
       </div>
     </div>
-  </div>
-  <div class="promo">
+  </section>
+
+  <section class="promo">
     <div class="container  promo__wrapper">
       <div class="promo__info-wrapper">
         <div class="promo__column">
           <h2>Super <br> Games</h2>
           <div class="promo__info">
             <div class="promo__date-wrapper">
-              <p class="promo__date">Дата</p>
-              <p>7</p>
-              <p>Марта 2019</p>
+              <p>
+                <span class="promo__date">Дата</span>
+                <span>7</span>
+                <span>Марта</span>
+                <span>2019</span>
+              </p>
             </div>
             <div class="promo__time-wrapper">
-              <p class="promo__time">Время</p>
-              <p>12:00</p>
+              <p>
+                <span class="promo__time">Время</span>
+                <span>12:00</span>
+              </p>
             </div>
           </div>
         </div>
         <p>Ежегодные соревнования по CrossFit</p>
         <a class="btn  btn__promo" href="#">заполнить заявку</a>
       </div>
-      <figure>
+      <figure class="promo__img">
         <img src="img/super-games.jpg" width="660" height="500" alt="Изображение мужчины">
       </figure>
     </div>
-  </div>
-  <div class="trainer">
+  </section>
+
+  <section class="trainer">
     <div class="container">
       <h2>Тренеры</h2>
       <ul class="trainer__list">
@@ -194,19 +207,24 @@
         </li>
       </ul>
     </div>
-  </div>
-  <div class="advantage">
+  </section>
+
+  <section class="advantage">
     <div class="container">
       <h2>Наши преимущества</h2>
       <div class="advantage__block">
-        <p class="advantage__number">900</p>
-        <p class="advantage__unit">кв/м</p>
+        <p>
+          <span class="advantage__number">900</span>
+          <span class="advantage__unit">кв/м</span>
+        </p>
         <h3>Площадь </h3>
         <p>Занимайтесь без очередей и толпучки</p>
       </div>
       <div class="advantage__block">
-        <p class="advantage__number">70</p>
-        <p class="advantage__unit">машин</p>
+        <p>
+          <span class="advantage__number">70</span>
+          <span class="advantage__unit">машин</span>
+        </p>
         <h3>Собственная парковка</h3>
         <p>Вы всегда найдете место для своей машины на нашей парковке</p>
       </div>
@@ -216,27 +234,32 @@
         <p>Современные тренажеры на все группы мышц</p>
       </div>
       <div class="advantage__block">
-        <p class="advantage__number">350</p>
-        <p class="advantage__unit">мест</p>
+        <p>
+         <span class="advantage__number">350</span>
+         <span class="advantage__unit">мест</span>
+        </p>
         <h3>Комфорт</h3>
         <p>Просторные раздевалки,
           душевые, фен, Wi-Fi, кулеры</p>
       </div>
       <div class="advantage__block">
-        <p class="advantage__number">5+</p>
-        <p class="advantage__unit">лет</p>
+        <p>
+          <span class="advantage__number">5+</span>
+          <span class="advantage__unit">лет</span>
+        </p>
         <h3>Тренерский опыт</h3>
         <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
       </div>
     </div>
-  </div>
-  <div class="discount">
+  </section>
+
+  <section class="discount">
     <div class="container">
       <h2>Акции</h2>
       <div class="discount__wrapper">
         <div class="discount__info-wrapper">
           <div class="discount__info">
-            <p class="discount__info__unit">Год</p>
+            <p class="discount__info-unit">Год</p>
             <p class="discount__info-number">4999</p>
             <p>Безлимитный абонемент в тренажерный зал</p>
             <a class="discount__more" href="#">подробнее</a>
@@ -263,8 +286,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="reviews  container">
+  </section>
+
+  <section class="reviews  container">
     <h2>Отзывы</h2>
     <div class="review">
       <figure class="review__img">
@@ -275,7 +299,8 @@
         <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
       </div>
     </div>
-  </div>
+  </section>
+
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__form">

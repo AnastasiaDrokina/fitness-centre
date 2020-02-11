@@ -23,6 +23,7 @@
 }
 
 .advantage__number {
+  display: block;
   margin: 0 0 10px 0;
   font-weight: bold;
   font-size: 71px;
@@ -32,6 +33,7 @@
 }
 
 .advantage__unit {
+  display: block;
   margin: 0;
   font-size: 14px;
   color: $blue-3;

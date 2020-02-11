@@ -1,6 +1,21 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 51px;
+}
+
+.banner__wrapper {
+  position: relative;
+  text-align: right;
+  margin-right: 64px;
+}
+
 .banner h1 {
   margin: 0;
+  line-height: 109px;
   color: $white;
+  margin-bottom: 80px;
 }
 
 .banner__city {
@@ -14,12 +29,16 @@
 }
 
 .banner__info {
+  position: absolute;
+  top: 357px;
+  right: 245px;
   font-size: 14px;
   color: $white;
 }
 
 .banner__info p {
   margin: 0;
+  white-space: nowrap;
 }
 
 .banner__social {
@@ -32,6 +51,13 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.banner__social {
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+  margin-bottom: 69px;
 }
 
 .banner__link {
@@ -48,23 +74,69 @@
 
 /* tablet */
 @media (max-width: $tablet) {
+  .banner {
+    justify-content: flex-end;
+    padding-top: 25px;
+  }
+
+  .banner__wrapper {
+    margin-right: 30px;
+  }
+
+  .banner h1 {
+    margin-bottom: 60px;
+    line-height: 86px;
+  }
+
+  .banner__img {
+    width: 324px;
+    height: 390px;
+  }
+
+  .banner__img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .banner__city {
     margin-bottom: 16px;
-    margin-top: 81px;
+    margin-top: 55px;
     font-size: 34px;
   }
 
-  .banner__link {
+  .banner__info {
+    top: 218px;
+    right: 193px;
+  }
+
+  .banner__social {
     display: none;
   }
 }
 
 /* mobile */
 @media (max-width: $mobile) {
+  .banner {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .banner__wrapper {
+    margin-right: 0;
+  }
+  .banner__info {
+    top: 222px;
+    right: 200px;
+  }
   .banner__city {
     margin-bottom: 20px;
     margin-top: 80px;
     font-size: 28px;
+  }
+
+  .banner h1 {
+    line-height: 78px;
   }
 
   .banner__img {
