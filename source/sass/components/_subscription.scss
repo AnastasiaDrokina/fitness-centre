@@ -66,7 +66,7 @@
 }
 
 .subscription__item {
-  width: 360px;
+  min-width: 360px;
   padding: 7px;
   background-color: $white;
   transition: all 0.3s;
@@ -133,7 +133,7 @@
   }
 
   .subscription__list {
-    flex-direction: column;
+    display: block;
   }
 
   .subscription__btn {
@@ -141,7 +141,7 @@
   }
 
   .subscription__item {
-    width: 442px;
+    max-width: 442px;
     margin-bottom: 40px;
 
     &:last-child {
@@ -167,8 +167,11 @@
   }
 
   .subscription__item {
-    max-width: 290px;
+    max-width: none;
     margin-bottom: 35px;
+    &:hover {
+      transform: none;
+    }
   }
 
   .subscription h3 {
