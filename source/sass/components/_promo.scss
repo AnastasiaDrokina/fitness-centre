@@ -1,5 +1,20 @@
 .promo {
   padding-bottom: 120px;
+
+  h2 {
+    margin: 0 50px 33px 0;
+    font-family: $font-bebas;
+    font-weight: bold;
+    color: $white;
+    font-size: 90px;
+  }
+
+  p {
+    margin: 0;
+    color: $white;
+    font-size: 18px;
+  }
+
 }
 
 .promo__wrapper {
@@ -15,20 +30,6 @@
 
 .promo__column {
   display: flex;
-}
-
-.promo h2 {
-  margin: 0 50px 33px 0;
-  font-family: $font-bebas;
-  font-weight: bold;
-  color: $white;
-  font-size: 90px;
-}
-
-.promo p {
-  margin: 0;
-  color: $white;
-  font-size: 18px;
 }
 
 .promo__date-wrapper {
@@ -56,33 +57,33 @@
 }
 
 .promo__month {
-  font-size: 14px;
   margin-top: 7px;
+  font-size: 14px;
 }
 
 .promo__img {
   flex: 1;
-}
 
-.promo__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* tablet */
 @media (max-width: $tablet) {
   .promo {
     padding-bottom: 100px;
-  }
 
-  .promo h2 {
-    margin: 0 29px 15px 0;
-    font-size: 52px;
-  }
+    h2 {
+      margin: 0 29px 15px 0;
+      font-size: 52px;
+    }
 
-  .promo p {
-    font-size: 12px;
+    p {
+      font-size: 12px;
+    }
   }
 
   .promo__wrapper {
@@ -111,8 +112,8 @@
   }
 
   .promo__month {
-    font-size: 10px;
     margin-top: 3px;
+    font-size: 10px;
   }
 }
 
@@ -123,8 +124,8 @@
   }
 
   .promo__wrapper {
-    flex-direction: column;
     height: auto;
+    flex-direction: column;
   }
 
   .promo__info-wrapper {

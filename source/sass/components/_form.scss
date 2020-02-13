@@ -1,10 +1,10 @@
 .form {
   padding: 70px 45px;
-}
 
-.form h2 {
-  margin: 0 0 58px 0;
-  color: $white;
+  h2 {
+    margin: 0 0 58px 0;
+    color: $white;
+  }
 }
 
 input {
@@ -35,8 +35,10 @@ input {
 
 /* tablet */
 @media (max-width: $tablet) {
-  .form h2 {
-    margin: 0 0 50px 0;
+  .form {
+    h2 {
+      margin: 0 0 50px 0;
+    }
   }
 
   input {

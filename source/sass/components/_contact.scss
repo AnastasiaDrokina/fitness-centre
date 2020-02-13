@@ -1,17 +1,18 @@
-.contacts {
+.contact {
   padding: 70px 45px;
+
+  h2 {
+    margin: 0 0 58px 0;
+  }
 }
 
-.contacts h2 {
-  margin: 0 0 58px 0;
-}
 
-.contacts__dt {
+.contact__dt {
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-.contacts__dd {
+.contact__dd {
   margin: 0;
   font-size: 14px;
   line-height: 175%;
@@ -19,16 +20,18 @@
 
 /* tablet */
 @media (max-width: $tablet) {
-  .contacts h2 {
-    margin: 0 0 50px 0;
+  .contact {
+    h2 {
+      margin: 0 0 50px 0;
+    }
   }
 
-  .contacts__dt {
+  .contact__dt {
     margin-bottom: 20px;
     font-size: 20px;
   }
 
-  .contacts__dd {
+  .contact__dd {
     margin: 0;
     font-size: 18px;
     line-height: 152%;

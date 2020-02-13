@@ -2,26 +2,25 @@
   position: relative;
   display: flex;
   justify-content: center;
-  padding-bottom: 51px;
+  padding-bottom: 41px;
+
+  h1 {
+    margin: 0 0 80px 0;
+    line-height: 109px;
+    color: $white;
+  }
 }
 
 .banner__wrapper {
   position: relative;
-  text-align: right;
   margin-right: 64px;
-}
-
-.banner h1 {
-  margin: 0;
-  line-height: 109px;
-  color: $white;
-  margin-bottom: 80px;
+  text-align: right;
 }
 
 .banner__city {
   display: inline-block;
-  margin-bottom: 25px;
   margin-top: 122px;
+  margin-bottom: 25px;
   font-family: $font-bebas;
   font-weight: normal;
   font-size: 49px;
@@ -34,15 +33,11 @@
   right: 245px;
   font-size: 14px;
   color: $white;
-}
 
-.banner__info p {
-  margin: 0;
-  white-space: nowrap;
-}
-
-.banner__social {
-  @include list-reset;
+  p {
+    margin: 0;
+    white-space: nowrap;
+  }
 }
 
 .banner__item {
@@ -54,6 +49,7 @@
 }
 
 .banner__social {
+  @include list-reset;
   position: absolute;
   bottom: 0;
   right: 45px;
@@ -77,36 +73,36 @@
   .banner {
     justify-content: flex-end;
     padding-top: 25px;
+
+    h1 {
+      margin-bottom: 60px;
+      line-height: 86px;
+    }
   }
 
   .banner__wrapper {
     margin-right: 30px;
   }
 
-  .banner h1 {
-    margin-bottom: 60px;
-    line-height: 86px;
-  }
-
-  .banner__img {
-    width: 324px;
-    height: 390px;
-  }
-
-  .banner__img img {
-    height: 100%;
-    object-fit: cover;
-  }
-
   .banner__city {
-    margin-bottom: 16px;
     margin-top: 55px;
+    margin-bottom: 16px;
     font-size: 34px;
   }
 
   .banner__info {
     top: 218px;
     right: 193px;
+  }
+
+  .banner__img {
+    width: 324px;
+    height: 390px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .banner__social {
@@ -120,23 +116,25 @@
     display: block;
     padding-top: 0;
     padding-bottom: 0;
+
+    h1 {
+      line-height: 78px;
+    }
   }
 
   .banner__wrapper {
     margin-right: 0;
   }
+
   .banner__info {
     top: 222px;
     right: 200px;
   }
-  .banner__city {
-    margin-bottom: 20px;
-    margin-top: 80px;
-    font-size: 28px;
-  }
 
-  .banner h1 {
-    line-height: 78px;
+  .banner__city {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 28px;
   }
 
   .banner__img {
