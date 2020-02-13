@@ -1,11 +1,51 @@
-.slider--review {
-  width: 600px;
-  height: 300px;
+// General
+.swiper-button-prev,
+.swiper-button-next {
+  color: $grey-4;
+
+  &::after {
+    font-size: 30px;
+  }
 }
+
+.swiper-button-prev {
+  left: -65px;
+}
+
+.swiper-button-next {
+  right: -65px;
+}
+
+// Trainer Slider
+.slider--trainer {}
+
+// Review Slider
+.slider--review {}
 
 /* mobile */
 @media (max-width: $mobile) {
-  .slider--review {
-    width: 100%;
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      font-size: 19px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -22px;
+  }
+
+  .swiper-button-next {
+    right: -22px;
+  }
+
+  .reviews__list {
+    .swiper-button-prev {
+      left: -41px;
+    }
+
+    .swiper-button-next {
+      right: -41px;
+    }
   }
 }

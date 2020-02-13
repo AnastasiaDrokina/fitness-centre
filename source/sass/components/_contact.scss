@@ -1,11 +1,33 @@
 .contact {
-  padding: 70px 45px;
-
   h2 {
     margin: 0 0 58px 0;
   }
 }
 
+.contact__wrapper {
+  display: flex
+}
+
+.contact__column {
+  &:first-child {
+    padding-right: 59px;
+    border-right: 1px solid $grey;
+  }
+
+  &:last-child {
+    padding-left: 59px;
+  }
+
+  dl {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 .contact__dt {
   margin-bottom: 15px;
@@ -35,5 +57,23 @@
     margin: 0;
     font-size: 18px;
     line-height: 152%;
+  }
+}
+
+/* mobile */
+@media (max-width: $mobile) {
+  .contact__wrapper {
+    display: block;
+  }
+
+  .contact__column {
+    &:first-child {
+      padding-right: 0;
+      border-right: 0;
+    }
+
+    &:last-child {
+      padding-left: 0;
+    }
   }
 }

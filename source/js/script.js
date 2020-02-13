@@ -21,20 +21,12 @@ subscriptionBtns.forEach(function (subscriptionBtn) {
   });
 });
 
-// Add slider review
-var sliderReview = new Swiper ('.slider--review', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-});
-
 // Add slider trainer
 var sliderTrainer = new Swiper ('.slider--trainer', {
   slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.trainer-button-next',
+    prevEl: '.trainer-button-prev'
   },
   breakpoints: {
     768: {
@@ -47,3 +39,12 @@ var sliderTrainer = new Swiper ('.slider--trainer', {
     }
   }
 });
+
+// Add slider review
+var sliderReview = new Swiper ('.slider--review', {
+  navigation: {
+    nextEl: '.review-button-next',
+    prevEl: '.review-button-prev'
+  },
+});
+
