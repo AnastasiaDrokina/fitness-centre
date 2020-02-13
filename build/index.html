@@ -222,21 +222,25 @@
       <h2>Наши преимущества</h2>
       <div class="advantage__inner">
         <div class="advantage__block">
-          <div class="advantage__block-wrapper">
-            <p>
+          <div class="advantage__block-wrapper  advantage__block-border">
+            <p class="advantage__block-inner">
               <span class="advantage__number">900</span>
               <span class="advantage__unit">кв/м</span>
             </p>
-            <h3>Площадь </h3>
-            <p>Занимайтесь без очередей и толпучки</p>
+            <div class="advantage__info">
+              <h3>Площадь </h3>
+              <p>Занимайтесь без очередей и толпучки</p>
+            </div>
           </div>
-          <div class="advantage__block-wrapper">
-            <p>
+          <div class="advantage__block-wrapper  advantage__block-column  advantage__block-border">
+            <p class="advantage__block-inner">
               <span class="advantage__number">70</span>
               <span class="advantage__unit">машин</span>
             </p>
-            <h3>Собственная парковка</h3>
-            <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            <div class="advantage__info">
+              <h3>Собственная парковка</h3>
+              <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+            </div>
           </div>
         </div>
 
@@ -248,21 +252,25 @@
 
         <div class="advantage__block">
           <div class="advantage__block-wrapper">
-            <p>
+            <p class="advantage__block-inner">
              <span class="advantage__number">350</span>
              <span class="advantage__unit">мест</span>
             </p>
-            <h3>Комфорт</h3>
-            <p>Просторные раздевалки,
-              душевые, фен, Wi-Fi, кулеры</p>
+            <div class="advantage__info">
+              <h3>Комфорт</h3>
+              <p>Просторные раздевалки,
+                душевые, фен, Wi-Fi, кулеры</p>
+            </div>
           </div>
-          <div class="advantage__block-wrapper">
-            <p>
+          <div class="advantage__block-wrapper  advantage__block-column">
+            <p class="advantage__block-inner">
               <span class="advantage__number">5+</span>
               <span class="advantage__unit">лет</span>
             </p>
-            <h3>Тренерский опыт</h3>
-            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            <div class="advantage__info">
+              <h3>Тренерский опыт</h3>
+              <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+            </div>
           </div>
         </div>
       </div>
@@ -304,6 +312,21 @@
     </div>
   </section>
 
+    <!-- Slider main container -->
+  <div class="slider--review">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>  <!--item -->
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
   <section class="reviews  container">
     <h2>Отзывы</h2>
     <div class="review">
@@ -411,6 +434,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/vendor/swiper.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -94,6 +94,11 @@
     transform: translateY(-50%);
   }
 }
+
+.trainer__img {
+  width: 260px;
+  height: 294px;
+}
 /* tablet */
 @media (max-width: $tablet) {
   .trainer {

@@ -20,3 +20,15 @@ subscriptionBtns.forEach(function (subscriptionBtn) {
     subscriptionBtn.classList.add('subscription__btn--active');
   });
 });
+
+// Add slider
+var mySwiper = new Swiper ('.slider--review', {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+})
