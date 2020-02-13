@@ -23,12 +23,8 @@ subscriptionBtns.forEach(function (subscriptionBtn) {
 
 // Add slider
 var mySwiper = new Swiper ('.slider--review', {
-  // Optional parameters
-  loop: true,
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.swipper-button-prev'
   },
-})
+});
