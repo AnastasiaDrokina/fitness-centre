@@ -1,13 +1,12 @@
 /* eslint-disable new-cap, no-undef */
 'use strict';
-var btnBanner = document.querySelector('.btn__banner');
-var subscription = document.querySelector('.subscription');
+var btnBanner = document.querySelector('.btn--banner');
+var subscription = document.querySelector('#subscription');
 var subscriptionBtns = document.querySelectorAll('.subscription__btn');
 
-console.log(subscriptionBtns);
-
 // Scroll
-btnBanner.addEventListener('click', function () {
+btnBanner.addEventListener('click', function (evt) {
+  evt.preventDefault();
   window.scrollBy({top: subscription.offsetTop - window.scrollY, behavior: 'smooth'});
 });
 
