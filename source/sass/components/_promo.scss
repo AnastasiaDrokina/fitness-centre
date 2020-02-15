@@ -19,7 +19,7 @@
 
 .promo__wrapper {
   display: flex;
-  height: 500px;
+  min-height: 500px;
 }
 
 .promo__info-wrapper {
@@ -63,6 +63,7 @@
 
 .promo__img {
   flex: 1;
+  background-color: #020145;
 
   img {
     width: 100%;
@@ -88,6 +89,7 @@
 
   .promo__wrapper {
     height: 292px;
+    min-height: auto;
   }
 
   .promo__info-wrapper {
