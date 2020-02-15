@@ -23,7 +23,9 @@
 }
 
 //Btn "buy" in the banner
-.btn__banner {-- display: inline-block;
+.btn--banner {
+  display: inline-block;
+  vertical-align: middle;
   max-width: 230px;
   width: 100%;
   min-height: 57px;

@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  font-weight: lighter;
+  font-weight: 300;
   font-display: swap;
   src: local("Roboto Condensed"), url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.woff") format("woff");
 }
@@ -28,6 +28,7 @@
 
 @font-face {
   font-family: "Bebas Neue";
+  font-weight: bold;
   font-display: swap;
   src: local("Bebas Neue"), url("../fonts/BebasNeue-Bold.woff2") format("woff2"), url("../fonts/BebasNeue-Bold.woff") format("woff");
 }
