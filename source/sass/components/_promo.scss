@@ -1,4 +1,5 @@
 .promo {
+  padding-top: 120px;
   padding-bottom: 120px;
 
   h2 {
@@ -14,7 +15,6 @@
     color: $white;
     font-size: 18px;
   }
-
 }
 
 .promo__wrapper {
@@ -75,6 +75,7 @@
 /* tablet */
 @media (max-width: $tablet) {
   .promo {
+    padding-top: 120px;
     padding-bottom: 100px;
 
     h2 {
@@ -122,6 +123,7 @@
 /* mobile */
 @media (max-width: $mobile) {
   .promo {
+    padding-top: 70px;
     padding-bottom: 70px;
   }
 

@@ -58,8 +58,8 @@
   margin: 0 0 -5px 0;
   font-weight: bold;
   font-size: 71px;
-  background: linear-gradient(120deg, rgba(237,2,51,1) 0%, rgba(6,61,180,1) 70%);
-  -webkit-background-clip: text;
+  background: linear-gradient(120deg, rgba(237, 2, 51, 1) 0%, rgba(6, 61, 180, 1) 70%);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -186,6 +186,7 @@
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+
     &:last-child {
       padding-bottom: 0;
     }

@@ -1,26 +1,36 @@
 // General
+.swiper-slide {
+  height: auto;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
+  @include button-reset;
+  width: 16px;
+  height: 32px;
   color: $grey-4;
+  background: center no-repeat;
+  background-size: contain;
 
   &::after {
-    font-size: 30px;
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
   }
 }
 
 .swiper-button-prev {
   left: -65px;
+  background-image: url("../../img/icon-left.svg");
 }
 
 .swiper-button-next {
   right: -65px;
+  background-image: url("../../img/icon-right.svg");
 }
-
-// Trainer Slider
-.slider--trainer {}
-
-// Review Slider
-.slider--review {}
 
 /* mobile */
 @media (max-width: $mobile) {

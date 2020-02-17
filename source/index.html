@@ -81,13 +81,13 @@
         </ul>
       </div>
       <div class="subscription__offer">
-        <ul class="subscription__list">
+        <ul class="subscription__list subscription__list--active">
           <li class="subscription__item">
             <div class="subscription__wrapper">
               <h3>С тренером</h3>
               <p class="subscription__period">12 занятий</p>
               <p class="subscription__price">
-                5000 <span class="subscription__unit">&#x20bd</span>
+                5000 <span class="subscription__unit">&#x20bd;</span>
                 <span class="subscription__price-shadow">5000</span>
               </p>
               <a class="btn  btn--subscription" href="#">Купить абонемент</a>
@@ -98,7 +98,7 @@
               <h3>Дневной</h3>
               <p class="subscription__period">с 8:00 до 17:00 </p>
               <p class="subscription__price">
-                1700 <span class="subscription__unit">&#x20bd</span>
+                1700 <span class="subscription__unit">&#x20bd;</span>
                 <span class="subscription__price-shadow">1700</span>
               </p>
               <a class="btn  btn--subscription" href="#">Купить абонемент</a>
@@ -109,8 +109,78 @@
               <h3>Полный день</h3>
               <p class="subscription__period">с 8:00 до 22:00 </p>
               <p class="subscription__price">
-                2700 <span class="subscription__unit">&#x20bd</span>
+                2700 <span class="subscription__unit">&#x20bd;</span>
                 <span class="subscription__price-shadow">2700</span>
+              </p>
+              <a class="btn  btn--subscription" href="#">Купить абонемент</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="subscription__list">
+          <li class="subscription__item">
+            <div class="subscription__wrapper">
+              <h3>С тренером</h3>
+              <p class="subscription__period">12 занятий</p>
+              <p class="subscription__price">
+                1 <span class="subscription__unit">&#x20bd;</span>
+                <span class="subscription__price-shadow">1</span>
+              </p>
+              <a class="btn  btn--subscription" href="#">Купить абонемент</a>
+            </div>
+          </li>
+          <li class="subscription__item">
+            <div class="subscription__wrapper">
+              <h3>Дневной</h3>
+              <p class="subscription__period">с 8:00 до 17:00 </p>
+              <p class="subscription__price">
+                2 <span class="subscription__unit">&#x20bd;</span>
+                <span class="subscription__price-shadow">2</span>
+              </p>
+              <a class="btn  btn--subscription" href="#">Купить абонемент</a>
+            </div>
+          </li>
+          <li class="subscription__item">
+            <div class="subscription__wrapper">
+              <h3>Полный день</h3>
+              <p class="subscription__period">с 8:00 до 22:00 </p>
+              <p class="subscription__price">
+                3 <span class="subscription__unit">&#x20bd;</span>
+                <span class="subscription__price-shadow">3</span>
+              </p>
+              <a class="btn  btn--subscription" href="#">Купить абонемент</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="subscription__list">
+          <li class="subscription__item">
+            <div class="subscription__wrapper">
+              <h3>С тренером</h3>
+              <p class="subscription__period">12 занятий</p>
+              <p class="subscription__price">
+                4 <span class="subscription__unit">&#x20bd;</span>
+                <span class="subscription__price-shadow">4</span>
+              </p>
+              <a class="btn  btn--subscription" href="#">Купить абонемент</a>
+            </div>
+          </li>
+          <li class="subscription__item">
+            <div class="subscription__wrapper">
+              <h3>Дневной</h3>
+              <p class="subscription__period">с 8:00 до 17:00 </p>
+              <p class="subscription__price">
+                5 <span class="subscription__unit">&#x20bd;</span>
+                <span class="subscription__price-shadow">5</span>
+              </p>
+              <a class="btn  btn--subscription" href="#">Купить абонемент</a>
+            </div>
+          </li>
+          <li class="subscription__item">
+            <div class="subscription__wrapper">
+              <h3>Полный день</h3>
+              <p class="subscription__period">с 8:00 до 22:00 </p>
+              <p class="subscription__price">
+                6 <span class="subscription__unit">&#x20bd;</span>
+                <span class="subscription__price-shadow">6</span>
               </p>
               <a class="btn  btn--subscription" href="#">Купить абонемент</a>
             </div>
@@ -140,7 +210,7 @@
           </div>
         </div>
         <p>Ежегодные соревнования по CrossFit</p>
-        <a class="btn  btn--promo" href="#">заполнить заявку</a>
+        <a class="btn  btn--promo" href="#">Заполнить заявку</a>
       </div>
       <figure class="promo__img">
         <img src="img/super-games.jpg" width="660" height="500" alt="Изображение мужчины">
@@ -297,8 +367,8 @@
         </div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev trainer-button-prev"></div>
-        <div class="swiper-button-next trainer-button-next"></div>
+        <button class="swiper-button-prev trainer-button-prev" type="button"></button>
+        <button class="swiper-button-next trainer-button-next" type="button"></button>
       </div>
     </div>
   </section>
@@ -372,7 +442,7 @@
             <p class="discount__info-unit">Год</p>
             <p class="discount__info-number">4999</p>
             <p>Безлимитный абонемент в тренажерный зал</p>
-            <a class="discount__more" href="#">подробнее</a>
+            <a class="discount__more  discount__more--year" href="#">подробнее</a>
           </div>
           <figure class="discount__img">
             <img src="img/discount.jpg" width="280" height="462" alt="Изображение девушки">
@@ -380,18 +450,14 @@
         </div>
         <div class="discount__offer">
           <div class="discount__offer-wrapper">
-            <div class="discount__offer-info">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-              <a class="discount__more" href="#">подробнее</a>
-            </div>
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <a class="discount__more" href="#">подробнее</a>
           </div>
           <div class="discount__offer-wrapper">
-            <div class="discount__offer-info">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес  с командой</p>
-              <a class="discount__more" href="#">подробнее</a>
-            </div>
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес  с командой</p>
+            <a class="discount__more" href="#">подробнее</a>
           </div>
         </div>
       </div>
@@ -406,46 +472,40 @@
       <div class="swiper-container  slider  slider--review">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="review">
-                <figure class="review__img">
-                  <img src="img/review-orlova.png" width="80" height="80" alt="Фотография Анны Орловой">
-                </figure>
-                <div class="review__text">
-                  <p class="review__name">Анна Орлова</p>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                </div>
-              </div>
-            </div>  <!--item -->
-            <div class="swiper-slide">
-              <div class="review">
-                <figure class="review__img">
-                  <img src="img/review-orlova.png" width="80" height="80" alt="Фотография Анны Орловой">
-                </figure>
-                <div class="review__text">
-                  <p class="review__name">Елена Караваева</p>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="review">
-                <figure class="review__img">
-                  <img src="img/review-orlova.png" width="80" height="80" alt="Фотография Анны Орловой">
-                </figure>
-                <div class="review__text">
-                  <p class="review__name">Оксана Шевлякова </p>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                </div>
-              </div>
-            </div>
+          <!-- Slides -->
+          <div class="swiper-slide review">
+            <figure class="review__img">
+              <img src="img/review-orlova.png" width="80" height="80" alt="Фотография Анны Орловой">
+            </figure>
+            <blockquote class="review__text">
+              <h3>Анна Орлова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </blockquote>
+          </div>
+          <div class="swiper-slide review">
+            <figure class="review__img">
+              <img src="img/review-orlova.png" width="80" height="80" alt="Фотография Анны Орловой">
+            </figure>
+            <blockquote class="review__text">
+              <h3>Елена Караваева</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей». </p>
+            </blockquote>
+          </div>
+          <div class="swiper-slide review">
+            <figure class="review__img">
+              <img src="img/review-orlova.png" width="80" height="80" alt="Фотография Анны Орловой">
+            </figure>
+            <blockquote class="review__text">
+              <h3>Оксана Шевлякова</h3>
+              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+            </blockquote>
+          </div>
         </div>
       </div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev review-button-prev"></div>
-      <div class="swiper-button-next review-button-next"></div>
+      <button class="swiper-button-prev review-button-prev" type="button"></button>
+      <button class="swiper-button-next review-button-next" type="button"></button>
     </div>
   </section>
 
@@ -454,16 +514,12 @@
       <div class="footer__form">
         <div class="form">
           <h2>Бесплатное занятие</h2>
-          <form method="GET">
-            <div class="form__fields">
-              <label class="visually-hidden" for="name">Имя</label>
-              <input type="text" name="name-field" id="name" placeholder="Имя" required>
-              <label class="visually-hidden" for="phone">Телефон</label>
-              <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone-field" id="phone" placeholder="Телефон" required>
-            </div>
-            <div class="form__submit">
-              <button class="btn  btn--form-sub" type="submit">Отправить</button>
-            </div>
+          <form method="POST">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input type="text" name="name-field" id="name" placeholder="Имя" required>
+            <label class="visually-hidden" for="phone">Телефон</label>
+            <input type="tel" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone-field" id="phone" placeholder="Телефон" required>
+            <button class="btn  btn--form-sub" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -476,21 +532,23 @@
             <div class="contact__column">
               <dl>
                 <dt class="contact__dt">Адрес:</dt>
-                <dd class="contact__dd">г. Омск, ул. 60 лет Октября, 7</dl>
+                <dd class="contact__dd">г. Омск, ул. 60 лет Октября, 7</dd>
               </dl>
               <dl>
                 <dt class="contact__dt">График работы:</dt>
-                <dd class="contact__dd">Пн-Вс: с 8:00 до 22:00</dl>
+                <dd class="contact__dd">Пн-Вс: с 8:00 до 22:00</dd>
               </dl>
             </div>
             <div class="contact__column">
               <dl>
                 <dt class="contact__dt">Телефон:</dt>
-                <dd class="contact__dd">8-800-555-55-55</dl>
+                <dd class="contact__dd">
+                  <a class="contact__phone" href="tel:8-800-555-55-55">8-800-555-55-55</a></dd>
               </dl>
               <dl>
                 <dt class="contact__dt">Email:</dt>
-                <dd class="contact__dd">omsk@supergym.ru</dd>
+                <dd class="contact__dd">
+                  <a class="contact__email" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
               </dl>
             </div>
           </div>
@@ -500,12 +558,9 @@
 
     <div class="footer__bottom">
       <div class="footer__info  container">
-        <a class="logo" href="#">
-          <img src="img/icon-logo.svg" width="89" height="20" alt="Логотип Supergym">
-        </a>
         <ul class="footer__menu">
           <li class="footer__item">
-            <a class="logo-mobile" href="#">
+            <a class="logo">
               <img src="img/icon-logo.svg" width="89" height="20" alt="Логотип Supergym">
             </a>
           </li>

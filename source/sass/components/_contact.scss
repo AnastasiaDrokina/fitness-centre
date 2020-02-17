@@ -5,10 +5,13 @@
 }
 
 .contact__wrapper {
-  display: flex
+  display: flex;
 }
 
 .contact__column {
+  width: 50%;
+  margin-bottom: 30px;
+
   &:first-child {
     padding-right: 59px;
     border-right: 1px solid $grey;
@@ -40,6 +43,16 @@
   line-height: 175%;
 }
 
+.contact__phone,
+.contact__email {
+  color: $blue-dark;
+
+  &:hover,
+  &:focus {
+    color: $blue-bright;
+  }
+}
+
 /* tablet */
 @media (max-width: $tablet) {
   .contact {
@@ -67,6 +80,8 @@
   }
 
   .contact__column {
+    width: auto;
+
     &:first-child {
       padding-right: 0;
       border-right: 0;

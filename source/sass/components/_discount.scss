@@ -15,16 +15,22 @@
 .discount__info-wrapper {
   display: flex;
   width: calc(50% - 20px);
+  background-color: #426ddd;
 }
 
 .discount__info {
-  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 280px;
   padding: 45px;
   background-color: $red;
   color: $white;
 
   p {
-    margin: 0;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -35,6 +41,7 @@
 }
 
 .discount__info-number {
+  margin-bottom: 35px;
   font-size: 70px;
   font-weight: bold;
 }
@@ -46,6 +53,7 @@
 }
 
 .discount__more {
+  margin-top: auto;
   padding-bottom: 5px;
   color: $white;
   font-weight: bold;
@@ -59,35 +67,39 @@
   }
 }
 
+.discount__more--year {
+  &:hover,
+  &:focus {
+    color: $blue-dark;
+    border-color: $blue-dark;
+  }
+}
+
 .discount__offer {
   width: calc(50% - 20px);
 }
 
 .discount__offer-wrapper {
-  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 560px;
+  min-height: 225px;
   margin-bottom: 40px;
-  background: linear-gradient(135deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 80%);
+  padding: 24px 35px 30px;
+  border: 7px solid transparent;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 80%) border-box;
 
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.discount__offer-info {
-  max-width: 560px;
-  height: 100%;
-  padding: 24px 35px 30px;
-  background-color: $white;
 
   h3 {
     margin: 0 0 20px 0;
   }
-
-  p {
-    margin: 0 0 72px 0;
-  }
 }
-
 
 .discount__img {
   flex: 1;
@@ -149,6 +161,7 @@
     width: calc(50% - 15px);
     margin-right: 30px;
     margin-bottom: 0;
+
     &:last-child {
       margin-right: 0;
     }
@@ -163,6 +176,7 @@
 
   .discount__info {
     max-width: none;
+    align-items: center;
   }
 
   .discount__info-wrapper {
@@ -173,10 +187,12 @@
   .discount__offer {
     display: block;
   }
+
   .discount__offer-wrapper {
     width: auto;
     margin: 0 0 30px 0;
   }
+
   .discount__offer-info {
     max-width: none;
     text-align: center;
@@ -188,5 +204,9 @@
 
   .discount__img {
     height: 299px;
+  }
+
+  .discount__info-number {
+    margin-bottom: 30px;
   }
 }

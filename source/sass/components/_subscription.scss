@@ -4,7 +4,7 @@
   background-color: $white-2;
 
   h2 {
-    margin: 0 0 53px 0 ;
+    margin: 0 0 53px 0;
   }
 
   h3 {
@@ -39,8 +39,12 @@
 }
 
 .subscription__list {
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+
+.subscription__list--active {
+  display: flex;
 }
 
 .subscription__time-list {
@@ -85,7 +89,6 @@
 
   &:hover,
   &:focus {
-    background-color: rgb(209, 10, 66);
     background: linear-gradient(135deg, rgba(209, 10, 66, 1) 0%, rgba(0, 53, 159, 1) 80%);
   }
 }
@@ -136,12 +139,12 @@
     margin-bottom: 45px;
   }
 
-  .subscription__list {
-    display: block;
-  }
-
   .subscription__btn {
     font-size: 18px;
+  }
+
+  .subscription__list--active {
+    display: block;
   }
 
   .subscription__item {

@@ -51,7 +51,7 @@
   height: 228px;
 
   &:hover {
-    &:after {
+    &::after {
       opacity: 1;
     }
   }
@@ -80,7 +80,6 @@
     opacity: 0;
     transition: all 0.5s;
   }
-
 }
 
 /* tablet */
@@ -107,6 +106,7 @@
   .info__photo-wrapper {
     text-align: center;
   }
+
   .info__lead {
     margin-bottom: 50px;
   }

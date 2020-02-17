@@ -8,6 +8,11 @@
 
 .social__link {
   display: block;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 /* tablet */
