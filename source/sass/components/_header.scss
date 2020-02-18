@@ -8,10 +8,12 @@
 }
 
 .header__phone {
+  margin-top: -2px;
   color: $white;
   font-family: $font-bebas;
   font-size: 26px;
   font-weight: bold;
+  letter-spacing: 0.7px;
 
   &:hover,
   &:focus {

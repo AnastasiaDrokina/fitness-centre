@@ -28,7 +28,7 @@
 .btn--banner {
   display: inline-block;
   vertical-align: middle;
-  max-width: 230px;
+  max-width: 237px;
   width: 100%;
   min-height: 57px;
   padding: 18px 24px;
@@ -82,7 +82,7 @@
 /* tablet */
 @media (max-width: $tablet) {
   .btn--banner {
-    max-width: 183px;
+    max-width: 186px;
   }
 
   .btn--promo {
@@ -100,7 +100,7 @@
     max-width: none;
     width: 100%;
     min-height: 59px;
-    padding: 25px 87px;
+    padding: 20px 25px;
     margin-bottom: 80px;
   }
 }
