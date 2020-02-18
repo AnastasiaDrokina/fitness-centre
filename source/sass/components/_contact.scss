@@ -1,6 +1,6 @@
 .contact {
   h2 {
-    margin: 0 0 58px 0;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -9,11 +9,10 @@
 }
 
 .contact__column {
-  width: 50%;
-  margin-bottom: 30px;
+  width: 235px;
 
   &:first-child {
-    padding-right: 59px;
+    padding-right: 10px;
     border-right: 1px solid $grey;
   }
 
@@ -33,7 +32,7 @@
 }
 
 .contact__dt {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   font-weight: bold;
 }
 
@@ -57,12 +56,20 @@
 @media (max-width: $tablet) {
   .contact {
     h2 {
-      margin: 0 0 50px 0;
+      margin: 0 0 35px 0;
+    }
+  }
+
+  .contact__column {
+    width: 264px;
+
+    &:last-child {
+      padding-left: 46px;
     }
   }
 
   .contact__dt {
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 20px;
   }
 
@@ -83,6 +90,7 @@
     width: auto;
 
     &:first-child {
+      margin-bottom: 30px;
       padding-right: 0;
       border-right: 0;
     }

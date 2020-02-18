@@ -13,7 +13,7 @@
 .btn--form-sub {
   width: 100%;
   min-height: 52px;
-  padding: 20px;
+  padding: 10px 20px;
   color: $white;
   font-size: 14px;
 
@@ -67,7 +67,7 @@
   display: block;
   width: 100%;
   padding: 23px 29px;
-  margin-top: 55px;
+  margin-top: 51px;
   border-width: 4px;
   text-align: center;
   color: $white;
@@ -88,7 +88,7 @@
   .btn--promo {
     min-height: 39px;
     padding: 16px;
-    margin-top: 36px;
+    margin-top: 31px;
     font-size: 10px;
     border-width: 2px;
   }
@@ -102,5 +102,13 @@
     min-height: 59px;
     padding: 20px 25px;
     margin-bottom: 80px;
+  }
+
+  .btn--promo {
+    margin-top: 33px;
+  }
+
+  .btn--form-sub {
+    margin-top: 13px;
   }
 }

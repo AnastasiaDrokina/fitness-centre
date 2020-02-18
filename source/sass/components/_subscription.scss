@@ -1,7 +1,20 @@
 .subscription {
+  position: relative;
+  z-index: 1;
   padding-top: 116px;
   padding-bottom: 120px;
   background-color: $white-2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -70px;
+    right: 0;
+    width: 290px;
+    height: 420px;
+    background: transparent url("../img/sports-equipment.png") no-repeat left top;
+  }
 
   h2 {
     margin: 0 0 33px 0;
@@ -131,6 +144,10 @@
     padding-top: 96px;
     padding-bottom: 100px;
 
+    &::before {
+      width: 370px;
+    }
+
     h2 {
       margin-bottom: 29px;
     }
@@ -163,6 +180,10 @@
   .subscription {
     padding-top: 70px;
     padding-bottom: 70px;
+
+    &::before {
+      display: none;
+    }
 
     h2 {
       margin-bottom: 25px;

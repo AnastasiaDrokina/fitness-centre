@@ -3,18 +3,21 @@
 
   h2 {
     margin-top: 0;
+    margin-bottom: 48px;
+    letter-spacing: 2px;
   }
 
   h3 {
     position: absolute;
     left: 50%;
-    bottom: 30px;
+    bottom: 26px;
     transform: translate(-50%);
     z-index: -1;
     margin: 0;
     text-align: center;
     font-size: 18px;
     color: $white;
+    white-space: nowrap;
   }
 }
 
@@ -61,8 +64,8 @@
 
 .trainer__overlay {
   opacity: 0;
-  height: calc(100% - 116px);
-  padding: 58px 57px;
+  height: calc(100% - 67px);
+  padding: 57px 44px 10px 55px;
   color: $white;
   text-align: center;
   background-color: rgba($blue-dark, 0.9);
@@ -89,8 +92,8 @@
 
 .trainer__overlay-item {
   position: relative;
-  padding-left: 10px;
-  margin-bottom: 24px;
+  padding-left: 17px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -99,9 +102,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 6px;
     left: 0;
-    transform: translateY(-50%);
     display: block;
     width: 6px;
     height: 6px;
@@ -116,6 +118,7 @@
     padding-bottom: 100px;
 
     h2 {
+      margin-bottom: 40px;
       text-align: center;
     }
   }
@@ -147,7 +150,7 @@
   }
 
   .trainer__overlay {
-    padding: 48px 34px;
-    height: calc(100% - 96px);
+    padding: 48px 31px 45px;
+    height: calc(100% - 93px);
   }
 }

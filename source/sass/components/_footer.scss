@@ -6,14 +6,14 @@
 // form
 .footer__form {
   width: 50%;
-  padding: 70px 170px 70px 120px;
+  padding: 64px 170px 63px 120px;
   background-color: $blue-dark;
 }
 
 // contact
 .footer__contacts {
   width: 50%;
-  padding: 70px 45px 70px 120px;
+  padding: 65px 45px 63px 120px;
 }
 
 // footer__bottom
@@ -78,10 +78,16 @@
   .footer__form {
     padding-right: 163px;
     padding-left: 133px;
+    padding-bottom: 70px;
+  }
+
+  .footer__contacts {
+    padding-bottom: 70px;
+    padding-left: 136px;
   }
 
   .footer__bottom {
-    padding-top: 47px;
+    padding-top: 41px;
     padding-bottom: 47px;
   }
 
@@ -89,7 +95,7 @@
     margin-right: 30px;
 
     &:first-child {
-      margin-right: 30px;
+      margin-right: 62px;
     }
   }
 }
@@ -113,10 +119,11 @@
   .footer__menu {
     display: block;
     column-count: 2;
+    margin-bottom: 23px;
   }
 
   .footer__item {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   .footer__link {
