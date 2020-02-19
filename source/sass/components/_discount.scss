@@ -1,5 +1,5 @@
 .discount {
-  padding-top: 119px;
+  padding-top: 114px;
 
   h2 {
     margin: 0 0 47px 0;
@@ -55,6 +55,7 @@
 .discount__more {
   margin-top: auto;
   padding-bottom: 1px;
+  padding-top: 20px;
   color: $white;
   font-weight: bold;
   text-transform: uppercase;
@@ -119,7 +120,7 @@
 /* tablet */
 @media (max-width: $tablet) {
   .discount {
-    padding-top: 100px;
+    padding-top: 81px;
 
     h2 {
       margin-bottom: 36px;
@@ -176,14 +177,14 @@
 /* mobile */
 @media (max-width: $mobile) {
   .discount {
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .discount__info {
     width: auto;
     max-width: none;
     align-items: center;
-    padding-bottom: 51px;
+    padding-bottom: 44px;
   }
 
   .discount__info-wrapper {
@@ -219,5 +220,9 @@
 
   .discount__info-number {
     margin-bottom: 30px;
+  }
+
+  .discount__more {
+    padding-top: 8px;
   }
 }

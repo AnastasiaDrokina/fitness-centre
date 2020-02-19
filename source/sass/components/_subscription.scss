@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   padding-top: 116px;
-  padding-bottom: 120px;
+  padding-bottom: 110px;
   background-color: $white-2;
 
   &::before {
@@ -50,6 +50,7 @@
 .subscription__list {
   display: none;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .subscription__list--active {
@@ -78,6 +79,7 @@
   &:hover,
   &:focus {
     color: rgba($blue-dark, 1);
+    outline: none;
   }
 }
 
@@ -94,6 +96,7 @@
 .subscription__item {
   min-width: 360px;
   padding: 7px;
+  margin-bottom: 10px;
   background-color: $white;
   transition: all 0.3s;
 

@@ -8,7 +8,7 @@ var subscriptionsLists = document.querySelectorAll('.subscription__list');
 // Scroll
 btnBanner.addEventListener('click', function (evt) {
   evt.preventDefault();
-  window.scrollBy({top: subscription.offsetTop - window.scrollY, behavior: 'smooth'});
+  window.scrollBy(0, subscription.offsetTop - window.scrollY);
 });
 
 // Add class "active" on subscription__btn
@@ -61,3 +61,6 @@ subscriptionBtns.forEach(function (btn, index) {
     subscriptionsLists[index].classList.add('subscription__list--active');
   });
 });
+
+// Валидация для телефона
+IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});

@@ -104,10 +104,15 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 14px;
+
+    p {
+      line-height: 22px;
+    }
   }
 
   .info__photo-wrapper {
-    margin-top: 60px;
+    margin-top: 45px;
     text-align: center;
   }
 
@@ -164,7 +169,7 @@
   }
 
   .info__photo-wrapper {
-    margin-top: 43px;
+    margin-top: 19px;
   }
 
   .info__photo {
