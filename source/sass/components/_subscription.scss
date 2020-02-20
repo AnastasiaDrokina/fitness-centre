@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
   padding-top: 116px;
-  padding-bottom: 110px;
+  padding-bottom: 80px;
   background-color: $white-2;
 
   &::before {
@@ -36,21 +36,15 @@
 }
 
 .subscription__time-list,
-.subscription__item {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.subscription__time-list,
 .subscription__list {
   @include list-reset;
 }
 
 .subscription__list {
   display: none;
-  justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .subscription__list--active {
@@ -64,6 +58,7 @@
   margin-left: auto;
   margin-right: auto;
   border-bottom: 2px solid rgba($grey-2, 0.2);
+  text-align: center;
 }
 
 .subscription__btn {
@@ -96,8 +91,9 @@
 .subscription__item {
   min-width: 360px;
   padding: 7px;
-  margin-bottom: 10px;
+  margin: 0 20px 40px;
   background-color: $white;
+  text-align: center;
   transition: all 0.3s;
 
   &:hover,
@@ -122,17 +118,18 @@
   font-weight: bold;
   font-size: 60px;
   color: $blue-bright;
-}
 
-.subscription__price-shadow {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  z-index: -1;
-  transform: translateX(-50%);
-  font-weight: bold;
-  font-size: 100px;
-  color: rgba($grey-3, 0.48);
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    z-index: -1;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 100px;
+    color: rgba($grey-3, 0.48);
+  }
 }
 
 .subscription__wrapper {
@@ -164,13 +161,19 @@
     font-size: 18px;
   }
 
+  .subscription__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .subscription__list--active {
     display: block;
   }
 
   .subscription__item {
     max-width: 442px;
-    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
 
     &:last-child {
       margin-bottom: 0;

@@ -1,24 +1,52 @@
 /* eslint-disable new-cap, no-undef */
 'use strict';
 var btnBanner = document.querySelector('.btn--banner');
-var subscription = document.querySelector('#subscription');
 var subscriptionBtns = document.querySelectorAll('.subscription__btn');
 var subscriptionsLists = document.querySelectorAll('.subscription__list');
+var anchors = document.querySelectorAll('a[href^="#"]');
 
-// Scroll
-btnBanner.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  window.scrollBy(0, subscription.offsetTop - window.scrollY);
+// Polyfill
+if (window.NodeList && !NodeList.prototype.forEach) {
+  NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
+// Anchors
+anchors.forEach(function (anchor) {
+  anchor.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    var href = anchor.getAttribute('href');
+    var target = document.querySelector(href);
+
+    target.scrollIntoView({behavior: 'smooth'});
+  });
 });
 
-// Add class "active" on subscription__btn
-subscriptionBtns.forEach(function (subscriptionBtn) {
+// Add class "active" on subscription__btn and subscription__list
+subscriptionBtns.forEach(function (subscriptionBtn, index) {
   subscriptionBtn.addEventListener('click', function () {
+    // Tabs button
     subscriptionBtns.forEach(function (btn) {
       btn.classList.remove('subscription__btn--active');
     });
     subscriptionBtn.classList.add('subscription__btn--active');
+
+    // Tabs content
+    subscriptionsLists.forEach(function (list) {
+      list.classList.remove('subscription__list--active');
+    });
+    subscriptionsLists[index].classList.add('subscription__list--active');
   });
+});
+
+// Валидация для телефона
+IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
+
+// Add slider review
+var sliderReview = new Swiper('.slider--review', {
+  navigation: {
+    nextEl: '.review-button-next',
+    prevEl: '.review-button-prev'
+  },
 });
 
 // Add slider trainer
@@ -43,24 +71,3 @@ var sliderTrainer = new Swiper('.slider--trainer', {
   }
 });
 
-// Add slider review
-var sliderReview = new Swiper('.slider--review', {
-  navigation: {
-    nextEl: '.review-button-next',
-    prevEl: '.review-button-prev'
-  },
-});
-
-// Add tabs subscription
-subscriptionBtns.forEach(function (btn, index) {
-  btn.addEventListener('click', function () {
-    subscriptionsLists.forEach(function (list) {
-      list.classList.remove('subscription__list--active');
-    });
-
-    subscriptionsLists[index].classList.add('subscription__list--active');
-  });
-});
-
-// Валидация для телефона
-IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
