@@ -1,6 +1,5 @@
 /* eslint-disable new-cap, no-undef */
 'use strict';
-var btnBanner = document.querySelector('.btn--banner');
 var subscriptionBtns = document.querySelectorAll('.subscription__btn');
 var subscriptionsLists = document.querySelectorAll('.subscription__list');
 var anchors = document.querySelectorAll('a[href^="#"]');
@@ -63,11 +62,10 @@ var sliderTrainer = new Swiper('.slider--trainer', {
       slidesPerGroup: 2,
       spaceBetween: 20
     },
-    1200: {
+    1100: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 40
     }
   }
 });
-

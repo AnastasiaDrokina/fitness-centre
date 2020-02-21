@@ -62,7 +62,7 @@ var sliderTrainer = new Swiper('.slider--trainer', {
       slidesPerGroup: 2,
       spaceBetween: 20
     },
-    1200: {
+    1100: {
       slidesPerView: 4,
       slidesPerGroup: 4,
       spaceBetween: 40
