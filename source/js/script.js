@@ -15,8 +15,9 @@ anchors.forEach(function (anchor) {
     evt.preventDefault();
     var href = anchor.getAttribute('href');
     var target = document.querySelector(href);
-
-    target.scrollIntoView({behavior: 'smooth'});
+    if (target) {
+      target.scrollIntoView({behavior: 'smooth'});
+    }
   });
 });
 
@@ -37,7 +38,7 @@ subscriptionBtns.forEach(function (subscriptionBtn, index) {
   });
 });
 
-// Валидация для телефона
+// Phone validation
 IMask(document.querySelector('#phone'), {mask: '+{7}(000)000-00-00'});
 
 // Add slider review
